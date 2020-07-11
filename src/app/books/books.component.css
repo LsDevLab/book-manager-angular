@@ -1,0 +1,63 @@
+/* BooksComponent's private CSS styles */
+h2{
+  text-align: center;
+  color: #424242;
+  font-family: 'Quicksand', sans-serif;
+}
+a { color: #757575;
+  text-decoration: none;
+  margin-right: 4pt;
+}
+a:hover
+{
+     color:#00A0C6;
+     text-decoration:none;
+     cursor:pointer;
+}
+.books {
+  width: 100%;
+  display: table;
+  text-align: center;
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+}
+.books li {
+  display: inline-block;
+  float: none;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.books li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.books li.selected {
+  background-color: #CFD8DC;
+  color: white;
+}
+.books li.selected:hover {
+  background-color: #BBD8DC;
+  color: white;
+}
+.books .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color:#2979FF;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}

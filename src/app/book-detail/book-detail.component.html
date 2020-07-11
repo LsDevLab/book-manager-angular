@@ -1,0 +1,28 @@
+<div *ngIf="book">
+
+  <h2>Modify or delete {{book.title | uppercase}}</h2>
+  <div><span>Isbn: </span>{{book.isbn}}</div>
+  <div>
+    <label>Title:
+      <input [(ngModel)]="book.title" placeholder="title"/>
+    </label>
+  </div>
+  <div>
+    <label>Year:
+      <input [(ngModel)]="book.year" placeholder="1970"/>
+    </label>
+  </div>
+  <div>
+    <label>Price:
+      <input [(ngModel)]="book.price" placeholder="0"/>
+    </label>
+  </div>
+
+</div>
+
+
+<div><button (click)="goBack()">Go Back</button></div>
+
+<div><button (click)="saveBook()">Save</button></div>
+
+<div><button (click)="deleteBook()">Delete</button></div>
